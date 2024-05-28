@@ -26,5 +26,4 @@ async def send():
     global data
     return data
 
-def run() -> None:
-    app.run(port=port)
+app.run(port=port)
