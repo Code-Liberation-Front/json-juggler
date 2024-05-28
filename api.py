@@ -27,4 +27,4 @@ async def send():
     global data
     return data
 
-app.run(ip=ip, port=port)
+app.run(port=port)
