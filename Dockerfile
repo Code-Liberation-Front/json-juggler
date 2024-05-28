@@ -15,6 +15,8 @@ COPY . .
 #Token variable
 ENV port="PORT"
 
+EXPOSE 2500
+
 #Run the main program
 CMD [ "python3", "api.py" ]
 
