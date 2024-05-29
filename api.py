@@ -2,7 +2,6 @@ from quart import  Quart, jsonify
 from quart import request
 import os
 
-ip = os.environ.get('ip', "0.0.0.0")
 port = os.environ.get('port', 2500)
 
 app = Quart(__name__)
@@ -27,4 +26,4 @@ async def send():
     global data
     return data
 
-app.run(port=port)
+app.run(host='0.0.0.0', port=port)
