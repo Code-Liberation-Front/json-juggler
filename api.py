@@ -26,5 +26,4 @@ async def send():
     global data
     return data
 
-
 app.run(host='0.0.0.0', port=port)
