@@ -18,7 +18,7 @@ ENV port="PORT"
 EXPOSE 2500
 
 #Run the main program
-CMD [ "python3", "api.py" ]
+CMD [ "python3", "-u", "api.py" ]
 
 #Compile on mac
 #sudo docker build . -t zbuddy19/autohetzner:
